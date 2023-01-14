@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --base: #162E3E;
+    --blur: 10px;
+    --spacing: 30px;
+}
+
+body {
+    width: 100vw;
+    background-color: var(--base);
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+.hl {
+    color: #8BDC84;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 25px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.image {
+    position: absolute;
+    width: 1500px;
+    height: 750px;
+    padding: var(--spacing);
+
+    filter: blur(var(--blur));
+}
